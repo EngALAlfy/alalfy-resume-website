@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -99,7 +98,7 @@ const Index = () => {
   ];
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${isDark ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
+    <div className="min-h-screen transition-colors duration-300 dark bg-gray-900">
       {/* Header Section */}
       <header className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20 px-4">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -333,19 +332,9 @@ const Index = () => {
             <p className="text-gray-400">
               © 2024 Islam Hassan Abd Allah Alalfy. All rights reserved.
             </p>
-            <div className="flex items-center gap-4">
-              <Button
-                onClick={toggleTheme}
-                variant="outline"
-                size="sm"
-                className="border-gray-600 text-gray-300 hover:bg-gray-800"
-              >
-                {isDark ? '☀️' : '🌙'} Toggle Theme
-              </Button>
-              <p className="text-sm text-gray-500">
-                Built with React & Vite
-              </p>
-            </div>
+            <p className="text-sm text-gray-500">
+              Built with React & Vite
+            </p>
           </div>
         </div>
       </footer>
