@@ -15,7 +15,7 @@ const Index = () => {
 
   const downloadCV = () => {
     // This would typically trigger a PDF download
-    window.open('/cv-islam-alalfy.pdf', '_blank');
+    window.open('/Islam_Alalfy_CV_2025_ATS_Updated.pdf', '_blank');
   };
 
   const workExperience = [
